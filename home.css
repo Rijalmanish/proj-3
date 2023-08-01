@@ -36,7 +36,12 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
+
+/* body{
+    scroll-behavior: smooth;
+} */
 
 h1,
 h2,
@@ -708,7 +713,7 @@ aside bar
 
 .aside{
     position: relative;
-    bottom: 392.5rem;
+    bottom: 322rem;
     left: 38rem;
 }
 
@@ -834,27 +839,46 @@ width: 33rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 0;
 }
 /* ==========================================
 slider
 ========================================== */
 
-.scrollTop-style {
-    position: fixed;
-    top: 21%;
-    left: 26%;
-    bottom: 5%;
-    z-index: 1;
+.go-to-top{
+    position: relative
 }
 
-.scroll-top {
+.top-btn{
+    width: 3.5rem;
+    height: 3.5rem;
+    border: none;
+    border-radius: 50%;
+    padding: 0.7rem;
+    background-color: blueviolet;
+    color: white;
+    position: fixed;
+    top: 88%;
+    left: 94%;
+}
+
+.top-arrow{
     width: 2rem;
     height: 2rem;
-    background: var(--bgg);
-    display: inline-block;
-    padding: 1.4rem 1.8rem;
-    position: relative;
-    color: var(--white);
-    /* animation: water-wave 3s linear infinite; */
-    cursor: pointer;
 }
+
+/* =================================================
+change pupular update
+================================================= */
+
+
+.ifram{
+    width: 50rem;
+    height: 160rem;
+    overflow: hidden;
+    position: relative;
+    bottom: 312rem;
+    left: 47rem;
+}
+
+
